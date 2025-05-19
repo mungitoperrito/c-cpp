@@ -1,0 +1,10 @@
+It is a pain to find a host system that is old enough to run K&R C.  Instead, 
+use the 2d edition of their book. That edition uses ANSI C.
+
+For 32 bit ANSI C, prepare gcc like this:
+
+    sudo apt-get install gcc-multilib
+
+Then, compile like this:
+
+    gcc -ansi -m32 program_name.c -o executable_name
