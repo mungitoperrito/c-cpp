@@ -5,8 +5,13 @@
 int main(){
 
     int i;
-    for(i = 0; i < 5; i = i + 1)
-       printf("%d ", i);
+    int last = 5;
+
+    for(i = 0; i < last; i = i + 1){
+       printf("%d", i);
+       if(i < last - 1)
+          printf(" "); 
+    }  /* multi-line loop needs {} */
 
     printf("\n");
 
