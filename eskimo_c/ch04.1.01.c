@@ -10,8 +10,8 @@ int main()
         int count;
         int num_rolls = 75000;
         double percentage;
-        time_t seconds = time(NULL);    /* Seconds sice teh epoch */
-
+        time_t seconds = time(NULL);    /* Seconds since the epoch */
+n
 	for(i = 0; i <= 12; i = i + 1)  /* Initialize an empty array */
 		rolls[i] = 0;
 
