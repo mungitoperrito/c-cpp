@@ -20,13 +20,11 @@ int main()
         printf("%d is equal to %d\n", x, y);
     }
 
-
-
     /* Ternary */
     printf("Ternary\n");
-    x > y ? printf("%d is greater than %d\n", x, y) :
-            y > x ? printf("%d is greater than %d\n", y, x) :
-            printf("%d is equal to %d\n", x, y);
+    x > y   ? printf("%d is greater than %d\n", x, y)
+    : y > x ? printf("%d is greater than %d\n", y, x)
+            : printf("%d is equal to %d\n", x, y);
 
     return 0;
 }
