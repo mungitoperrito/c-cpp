@@ -10,7 +10,7 @@ int main(void)
     return 0;
 }
 
-
+// Print a character num_chars times
 void print_char_string(int num_chars, char character)
 {
     int i;
