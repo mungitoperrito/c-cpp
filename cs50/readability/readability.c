@@ -6,6 +6,8 @@
 #define LETTER_COEFFICIENT 0.0588
 #define SENTENCE_COEFFICIENT 0.296
 #define OFFSET 15.8
+#define LOWER_CASE ((text[i] >= 'a') && (text[i] <= 'z'))
+#define UPPER_CASE ((text[i] >= 'A') && (text[i] <= 'Z'))
 
 int main(void)
 {
@@ -26,7 +28,7 @@ int main(void)
     // Count letters, spaces, sentences
     while (text[i] != '\0')
     {
-        if (((text[i] >= 'A') && (text[i] <= 'Z')) || ((text[i] >= 'a') && (text[i] <= 'z')))
+        if (UPPER_CASE || LOWER_CASE)
         {
             letters++;
         }
