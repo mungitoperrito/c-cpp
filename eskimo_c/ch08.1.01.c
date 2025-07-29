@@ -39,7 +39,7 @@ int main(){
       str_03[i] = val;
    }
 
-   /* Length of an array: sizof(some_array) / sizeof(some_array[0] */
+   /* Length of an array: sizeof(some_array) / sizeof(some_array[0]) */
 
    printf("strlen ignores blanks in string array\n");
    printf("strlen: %2d  ", strlen(str_01));
